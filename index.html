@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <img src="img/logo.png" id="logo">
+            </div>
+            <div class="menu"> 
+                <a href="#" type="button">Dica1</a>
+                <a href="#" type="button">Dica2</a>
+                <a href="#" type="button">Cadastro</a>
+                <a href="#" type="button">Lista de Alunos</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <h1>Este é um teste de programação Frontend</h1>
+            <h3>Vamos fazer um cadastro de alunos básico e uma listagem</h3>
+            <a href="#" type="button" class="botão-cadastro">Cadastro de Aluno</a>
+            <img src="img/imagem1.png">
+        </section>
+        <section>
+            <img src="img/imagem2.jpeg">
+            <img src="img/imagem3.png">
+        </section>
+        <section>
+            <img src="img/imgem4.jpg">
+            <h2>Cada aluno cadastrado deve aparecer
+                na tabela abaixo do formulário, além da  inclusão,
+                crie um método para remover o cadastro
+            </h2>
+            <a href="#" type="button" class="botão-cadastro">Cadastro de Aluno</a>
+        </section>
+        <section class="tabela">
+            <h1>Cadastro Aluno</h1>
+            <br>
+
+            <form action="index.html" method="post">
+                <div>
+                    <label>Nome</label>
+                    <br>
+                    <input type="text" placeholder="Digite o nome do Aluno" id="nome">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <br>
+                    <input type="email" placeholder="Digite o Email" id="email">
+                </div>
+                <div>
+                    <label>CPF</label>
+                    <br>
+                    <input type="text" placeholder="Digite o CPF" autocomplete="off" maxlength="14" id="cpf" onkeyup="mascara_cpf()">
+                </div>
+                <div>
+                    <label>Curso</label>
+                    <br>
+                    <input type="text" placeholder="Digite o Curso" id="curso">
+                </div>
+            </form>
+            <a href="#" type="button" class="cadastro">Cadastro</a>
+        </section>
+        <section>
+            <h1>Lista de Alunos</h1>
+            <div>
+                <th>
+                    <td>Nome</td>
+                    <td>Email</td>
+                    <td>CPF</td>
+                    <td>Curso</td>
+                    <td>-</td>
+                </th>
+            </div>
+            <div>
+                <td>
+                    <tr>José Santos</tr>
+                    <tr>zezin@site.net</tr>
+                    <tr>043.660.850.20</tr>
+                    <tr>Programação 1</tr>
+                    <tr>x</tr>
+                </td>
+            </div>
+            <div>
+                <td>
+                    <tr>Carlos Testa</tr>
+                    <tr>testador@site.org</tr>
+                    <tr>540.247.730-07</tr>
+                    <tr>Lógica de Programação</tr>
+                    <tr>x</tr>
+                </td> 
+            </div>
+            <div>
+                <td>
+                    <tr>Alceu Validando</tr>
+                    <tr>valida@test.bet</tr>
+                    <tr>856.390.070-60</tr>
+                    <tr>Lógica de Programação</tr>
+                    <tr>x</tr>
+                </td>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Powered by Mach1 - Pilotando para o futuro!
+    </footer>
+</body>
+</html>
